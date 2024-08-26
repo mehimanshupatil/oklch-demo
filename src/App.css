@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+ 
+ 
+.card {
+  padding: 2em;
+}
+
+ 
+code{
+  white-space: pre-line;
+  word-break: auto-phrase;
+  word-spacing: unset;
+  text-align: justify;
+}
