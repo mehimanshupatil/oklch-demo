@@ -1,6 +1,7 @@
 import "./App.css";
 import ColorCircleAdditive from "./component/ColorCircleAdditive";
 import ColorCircleSubtractive from "./component/ColorCircleSubtractive";
+import Credit from "./component/Credit";
 import OklchGenerator from "./component/OklchGenerator";
 
 function App() {
@@ -16,29 +17,39 @@ function App() {
 				<ColorCircleSubtractive />
 			</div>
 			<div className="card flex flex-col items-center">
+				Faint WebKit logo in the Display P3 color space
+				<img
+					src={"/Webkit-logo-P3.png"}
+					alt="webkit logo in p3 color"
+					className="size-96"
+				/>
+			</div>
+			<div className="card flex flex-col items-center">
 				color spectrom visible for human eye
-				<a
-					href="https://upload.wikimedia.org/wikipedia/commons/b/ba/PlanckianLocus.png"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/b/ba/PlanckianLocus.png"
-						alt="CIE 1931 chromaticity diagram"
-						className="bg-white w-96"
-					/>
-				</a>
-				<a
-					href="https://upload.wikimedia.org/wikipedia/commons/b/b3/CIE1931xy_gamut_comparison_of_sRGB_P3_Rec2020.svg"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/b/b3/CIE1931xy_gamut_comparison_of_sRGB_P3_Rec2020.svg"
-						alt="CIE 1931 chromaticity diagram"
-						className="bg-white w-96"
-					/>
-				</a>
+				<div className="flex items-center">
+					<a
+						href="https://upload.wikimedia.org/wikipedia/commons/b/ba/PlanckianLocus.png"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/b/ba/PlanckianLocus.png"
+							alt="CIE 1931 chromaticity diagram"
+							className="bg-white w-96"
+						/>
+					</a>
+					<a
+						href="https://upload.wikimedia.org/wikipedia/commons/b/b3/CIE1931xy_gamut_comparison_of_sRGB_P3_Rec2020.svg"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/b/b3/CIE1931xy_gamut_comparison_of_sRGB_P3_Rec2020.svg"
+							alt="CIE 1931 chromaticity diagram"
+							className="bg-white w-96"
+						/>
+					</a>
+				</div>
 			</div>
 
 			<div className="card">
@@ -222,24 +233,7 @@ function App() {
 					</code>
 				</div>
 			</div>
-			<footer>
-				credits:{" "}
-				<a
-					href="https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl"
-					target="_blank"
-					rel="noreferrer"
-				>
-					evil martians
-				</a>{" "}
-				|{" "}
-				<a
-					href="https://keithjgrant.com/posts/2023/04/its-time-to-learn-oklch-color/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					keith j grant
-				</a>
-			</footer>
+			<Credit />
 		</>
 	);
 }
